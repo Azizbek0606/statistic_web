@@ -1,9 +1,4 @@
-from django.db import models
-from django.contrib.auth.models import User
+from django.contrib import admin
+from . import models 
 
-
-class Activity_category(models.Model):
-    category_name = models.CharField(max_length=150)
-    
-    def __str__ (self):
-        return str(self.category_name)
+admin.site.register(models.Habits_category)
