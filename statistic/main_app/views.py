@@ -3,4 +3,7 @@ from . import models
 
 
 def home(request):
-    return render(request, "index.html")
+    return render(request, "first.html")
+
+def statistic(request):
+    return render(request , "statistic.html")

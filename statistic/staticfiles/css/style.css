@@ -10,3 +10,7 @@ body{
     background: #132123;
     color: white;
 }
+.wrapper_chart{
+    width: 500px;
+    height: 500px;
+}

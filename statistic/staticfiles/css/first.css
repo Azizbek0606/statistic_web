@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "nunito";
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background:  #132123;
+    position: relative;
+}
+.choose_block{
+    width: 350px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff1d;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+.active_choose{
+    width: 0px;
+    height: 0px;
+    border: none;
+}
+.active_choose > h1{
+    display: none;
+}
+.main_block{
+    width: 350px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff1d;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    font-size: 1.5em;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    padding: 0px 10px;
+}
+.active_menu{
+    height: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.49);
+}
+.main_block ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.main_block li {
+    width: 100%;
+    transition: 1s;
+    border-radius: 10px;
+}
+.main_block li:hover{
+    transition: 0s;
+    background-color: var(--i);
+}
+.block_btn{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff1d;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    backdrop-filter: blur(10px);
+    outline: none;
+}
+.choose_block::before{
+    content: "Click here";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0355309c;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    bottom: -100%;
+    transition: 0.3s;
+}
+.choose_block:hover::before{
+    bottom: 0px;
+}
+.date , .time , .new_text , .new_vocabulary , .todo_list{
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff1d;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.49);
+    backdrop-filter: blur(10px);
+    position: absolute;
+}
+.date{
+    bottom: 30px;
+    left: 30px;
+}
+.time{
+    bottom: 30px;
+    right: 30px;
+}
+.new_text{
+    top: 30px;
+    left: 30px;
+}
+.todo_list{
+    top: 30px;
+    right: 30px;
+}
