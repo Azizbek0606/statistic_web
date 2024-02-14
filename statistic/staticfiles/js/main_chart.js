@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
             labels: ['Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'Iyun', 'Iyul', 'Avgust', 'Sentabr', 'Oktabr', 'Noyabr', 'Dekabr'],
             datasets: [{
-                label: 'Oylik ko\'rishlar soni',
+                label: 'Har Kunlik Chiqim',
                 data: [12, 19, 3, 5, 2, 3],
                 backgroundColor: 'rgba(255, 99, 132, 0.2)',
                 borderColor: 'rgba(255, 99, 132, 1)',
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
         data: {
             labels: ['Yanvar', 'Fevral', 'Mart', 'Aprel', 'May', 'Iyun', 'Iyul', 'Avgust', 'Sentabr', 'Oktabr', 'Noyabr', 'Dekabr'],
             datasets: [{
-                label: 'Oylik ko\'rishlar soni',
+                label: 'Har Kunlik Amal',
                 data: [12, 20, 3, 7, 2, 20, 30],
                 backgroundColor: 'rgba(0, 99, 132, 0.2)',
                 borderColor: 'rgba(0, 99, 132, 1)',

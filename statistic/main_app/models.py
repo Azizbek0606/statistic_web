@@ -2,25 +2,17 @@ from django.db import models
 from datetime import timedelta
 
 
-class Habits_category(models.Model):
-    category_name = models.CharField(max_length=150)
-
-    def __str__(self):
-        return str(self.category_name)
-
-
-
-
 class Daily_Works(models.Model):
+    HABITS_CATEGORY = (
+        ("GOOD", "Good"),
+        ("BAD", "Bad"),
+        ("DAILY", "Daily"),
+    )
     name = models.CharField(max_length=150)
     day_work = models.DateTimeField(auto_now_add=True)
     start_time = models.DateTimeField()
     end_time = models.DateTimeField()
-    works_category = models.ForeignKey(
-        Habits_category,
-        on_delete=models.CASCADE,
-        related_name="daily_works",
-    )
+    works_category = models.CharField(max_length=150, choices=HABITS_CATEGORY)
     workduration = models.DurationField(default=timedelta())
 
     def save(self, *args, **kwargs):
@@ -29,7 +21,7 @@ class Daily_Works(models.Model):
 
     def __str__(self) -> str:
         return str(self.name)
-    
+
 
 class Spend_money(models.Model):
     why = models.CharField(max_length=150)
