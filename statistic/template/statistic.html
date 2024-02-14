@@ -1,6 +1,25 @@
 {% extends "base.html" %}
 {% block context %}
-<div class="wrapper_chart">
-    <canvas id="myChart" width="400" height="400"></canvas>
+<div class="full_wrapper">
+    <div class="main_wrapper">
+        <div class="main_context">
+            <h1>
+                Kunlik chiqimlar
+            </h1>
+        </div>
+        <div class="wrapper_chart">
+            <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </div>
+    <div class="main_wrapper">
+        <div class="main_context">
+            <h1>
+                Kunlik odatlar
+            </h1>
+        </div>
+        <div class="wrapper_chart">
+            <canvas id="second_chart" width="400" height="400"></canvas>
+        </div>
+    </div>
 </div>
 {% endblock context %}
