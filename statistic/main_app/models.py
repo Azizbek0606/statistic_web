@@ -9,7 +9,6 @@ class Habits_category(models.Model):
         return str(self.category_name)
 
 
-from django.db import models
 
 
 class Daily_Works(models.Model):
@@ -27,3 +26,15 @@ class Daily_Works(models.Model):
     def save(self, *args, **kwargs):
         self.workduration = self.end_time - self.start_time
         super(Daily_Works, self).save(*args, **kwargs)
+
+    def __str__(self) -> str:
+        return str(self.name)
+    
+
+class Spend_money(models.Model):
+    why = models.CharField(max_length=150)
+    how_much = models.CharField(max_length=150)
+    which_day = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return str(self.why)

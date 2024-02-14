@@ -41,61 +41,6 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "main_app",
 ]
-JAZZMIN_SETTINGS = {
-    # umumiy sozlamalar
-    "site_title": "Admin Panelim",
-    "site_header": "Mening Adminim",
-    "site_brand": "Mening Loyiham",
-    "welcome_sign": "Xush kelibsiz, Admin",
-    "login_logo": None,
-    "login_logo_dark": None,
-    # Mavzular
-    "theme": "cosmo",  # mavzular ro'yxati uchun hujjatlarga qarang
-    # Foydalanuvchi UI sozlamalari
-    "user_avatar": None,  # foydalanuvchi avatari uchun URL
-    # Menyu sozlamalari
-    "topmenu_links": [
-        # Top menyu uchun maxsus havolalar
-        {
-            "name": "Bosh sahifa",
-            "url": "admin:index",
-            "permissions": ["auth.view_user"],
-        },
-        # ko'proq havolalar qo'shishingiz mumkin
-    ],
-    "show_sidebar": True,  # yon panelni ko'rsatish/berkitish
-    "default_theme": "light",  # Mavzu (light/dark)
-    # va boshqa ko'plab sozlamalar
-}
-
-JAZZMIN_UI_TWEAKS = {
-    "navbar_small_text": False,
-    "footer_small_text": False,
-    "body_small_text": False,
-    "brand_small_text": False,
-    "brand_colour": False,
-    "accent": "accent-primary",
-    "navbar": "navbar-white navbar-light",
-    "no_navbar_border": False,
-    "sidebar": "sidebar-dark-primary",
-    "sidebar_nav_small_text": False,
-    "sidebar_disable_expand": False,
-    "sidebar_nav_child_indent": False,
-    "sidebar_nav_compact_style": False,
-    "sidebar_nav_legacy_style": False,
-    "sidebar_nav_flat_style": False,
-    "theme": "cosmo",
-    "dark_mode_theme": None,
-    "button_classes": {
-        "primary": "btn-primary",
-        "secondary": "btn-secondary",
-        "info": "btn-info",
-        "warning": "btn-warning",
-        "danger": "btn-danger",
-        "success": "btn-success",
-    },
-}
-
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
