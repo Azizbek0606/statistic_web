@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "main_app",
     "fontawesomefree",
+    "rest_framework",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",

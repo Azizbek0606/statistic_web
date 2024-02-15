@@ -16,6 +16,34 @@ body{
     background:  #132123;
     position: relative;
 }
+.full_wrapper{
+    width: 650px;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.full_wrapper::before{
+    content: "";
+    position: absolute;
+    width: 170%;
+    height: 30%;
+    background-color: #486f75;
+    z-index: -2;
+    animation: anime 2s linear infinite;
+}
+.full_wrapper::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background-color: #132123;
+    z-index: -1;
+    border-radius: 10px;
+}
 .choose_block{
     width: 350px;
     height: 100px;
@@ -30,6 +58,7 @@ body{
     white-space: nowrap;
     overflow: hidden;
     position: relative;
+    z-index: 999 !important;
 }
 .active_choose{
     width: 0px;
@@ -97,7 +126,7 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #0355309c;
+    background-color: #486f75d0;
     backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
@@ -136,4 +165,64 @@ body{
 .todo_list{
     top: 30px;
     right: 30px;
+}
+.for_animation{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.for_animation::before{
+    content: "";
+    position: absolute;
+    width: 170%;
+    height: 50%;
+    background-color: var(--i);
+}
+.for_animation::after{
+    content: "";
+    position: absolute;
+    inset: 4px;
+    background-color: #132123;
+    border-radius: 6px;
+}
+.for_animation0{
+    left: 30px;
+    top: 30px;
+}
+.for_animation1{
+    left: 30px;
+    bottom: 30px;
+}
+.for_animation2{
+    right: 30px;
+    top: 30px;
+}
+.for_animation3{
+    right: 30px;
+    bottom: 30px;
+}
+.for_animation0::before{
+    animation: anime 4s linear reverse infinite;
+}
+.for_animation1::before{
+    animation: anime 2s linear reverse infinite;
+}
+.for_animation2::before{
+    animation: anime 4s linear reverse infinite;
+}
+.for_animation3::before{
+    animation: anime 3s linear reverse infinite;
+}
+@keyframes anime{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }

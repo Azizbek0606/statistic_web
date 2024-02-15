@@ -11,24 +11,30 @@
 </head>
 
 <body>
+    <div style="--i:#035511" class="for_animation for_animation0"></div>
+    <div style="--i:#035530" class="for_animation for_animation1"></div>
+    <div style="--i:#0ad530" class="for_animation for_animation2"></div>
+    <div style="--i:#055aa0" class="for_animation for_animation3"></div>
     <div class="date"></div>
     <div class="time"></div>
     <div class="new_text"><a href="/">Add New Text</a></div>
     <div class="todo_list"><a href="/">Add New Vocabulary</a></div>
-    <div class="choose_block x_mark main_toggler_btn">
-        <h1>Choose direction</h1>
-    </div>
-    <div class="main_block">
-        <button class="x_mark block_btn">
-            <i class="fa-solid fa-x"></i>
-        </button>
-        <ul>
-            <li style="--i:#13212350"><a href="/">Home</a></li>
-            <li style="--i:#fff00050"><a href="{%  url 'main_app:statistic'%}">Statistic</a></li>
-            <li style="--i:#12343250"><a href="/">Text</a></li>
-            <li style="--i:#19823450"><a href="/">Add new Statistic</a></li>
-            <li style="--i:#12123450"><a href="/">Add New Todo</a></li>
-        </ul>
+    <div class="full_wrapper">
+        <div class="choose_block x_mark main_toggler_btn">
+            <h1>Choose direction</h1>
+        </div>
+        <div class="main_block">
+            <button class="x_mark block_btn">
+                <i class="fa-solid fa-x"></i>
+            </button>
+            <ul>
+                <li style="--i:#13212350"><a href="/">Home</a></li>
+                <li style="--i:#fff00050"><a href="{%  url 'main_app:statistic'%}">Statistic</a></li>
+                <li style="--i:#12343250"><a href="/">Text</a></li>
+                <li style="--i:#19823450"><a href="/">Add new Statistic</a></li>
+                <li style="--i:#12123450"><a href="/">Add New Todo</a></li>
+            </ul>
+        </div>
     </div>
     <script src="{% static 'js/first.js' %}"></script>
     <script src="{% static 'fontawesomefree/js/all.min.js' %}"></script>
